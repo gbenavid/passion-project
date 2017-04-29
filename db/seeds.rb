@@ -1,6 +1,6 @@
-# create seeds for #User
+# Create seeds for #User
 
-# dummy users to populate test users for testing purposes.
+# Dummy users (without friends) to leverage test users.
 users = [
   User.create({ full_name: "Rosie Selena", username: "RS", email: "rs@gmail.com", password_hash: "password" }),
   User.create({ full_name: "Karen Cole", username: "KC", email: "kc@gmail.com", password_hash: "password" }),
@@ -29,7 +29,7 @@ users_with_friends_who_have_friends = [
   User.create({ full_name: "Kortney Smith", username: "KS", email: "ks2@gmail.com", password_hash: "password", friends: users_with_friends.sample(3 )})
 ]
 
-# create seeds for #Article
+# Create seeds for #Article
 articles = [
   Article.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum", user: users_with_friends_who_have_friends.sample }),
   Article.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum", user: users_with_friends_who_have_friends.sample }),
@@ -39,6 +39,7 @@ articles = [
   Article.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum", user: users_with_friends_who_have_friends.sample })
 ]
 
+# Create seeds for #Tag
 Tag.create({ article: articles.sample, user: users_with_friends_who_have_friends.sample })
 Tag.create({ article: articles.sample, user: users_with_friends_who_have_friends.sample })
 Tag.create({ article: articles.sample, user: users_with_friends_who_have_friends.sample })
@@ -48,4 +49,12 @@ Tag.create({ article: articles.sample, user: users_with_friends_who_have_friends
 Tag.create({ article: articles.sample, user: users_with_friends_who_have_friends.sample })
 Tag.create({ article: articles.sample, user: users_with_friends_who_have_friends.sample })
 
+# Create seeds for #Comment
+Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample })
+Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample })
+Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample })
+Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample })
+Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample })
+Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample })
+Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample })
 

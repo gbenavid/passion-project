@@ -3,5 +3,6 @@ class User < ActiveRecord::Base
   belongs_to :friend, class_name: "User"
   has_many :articles
   has_many :tags, through: :articles
+  has_many :comments, :as => :commentable
 
 end
