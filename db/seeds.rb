@@ -50,11 +50,24 @@ Tag.create({ article: articles.sample, user: users_with_friends_who_have_friends
 Tag.create({ article: articles.sample, user: users_with_friends_who_have_friends.sample })
 
 # Create seeds for #Comment
-Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample })
-Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample })
-Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample })
-Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample })
-Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample })
-Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample })
-Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample })
+comments = [
+  Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample }),
+  Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample }),
+  Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample }),
+  Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample }),
+  Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample }),
+  Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample }),
+  Comment.create({ body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laborum", user: users_with_friends_who_have_friends.sample })
+]
+# Create seeds for #Like NOT WORKING
+# Like.create({ article: articles.sample, user_id: users_with_friends_who_have_friends.sample })
+# Like.create({ article: comments.sample, user_id: users_with_friends_who_have_friends.sample })
+# Like.create({ article: articles.sample, user_id: users_with_friends_who_have_friends.sample })
+# Like.create({ article: comments.sample, user_id: users_with_friends_who_have_friends.sample })
+# Like.create({ article: articles.sample, user_id: users_with_friends_who_have_friends.sample })
+# Like.create({ article: comments.sample, user_id: users_with_friends_who_have_friends.sample })
+# Like.create({ article: articles.sample, user_id: users_with_friends_who_have_friends.sample })
+# Like.create({ article: comments.sample, user_id: users_with_friends_who_have_friends.sample })
+# Like.create({ article: articles.sample, user_id: users_with_friends_who_have_friends.sample })
+# Like.create({ article: comments.sample, user_id: users_with_friends_who_have_friends.sample })
 

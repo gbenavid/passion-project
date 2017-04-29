@@ -4,5 +4,7 @@ class User < ActiveRecord::Base
   has_many :articles
   has_many :tags, through: :articles
   has_many :comments, :as => :commentable
+  # has_many :likes, :as => :likeable
+
 
 end
